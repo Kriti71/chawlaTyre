@@ -3,11 +3,8 @@ package com.chawla.tyre.controller;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.chawla.tyre.model.Employee;
 
 @Controller
 public class WelcomeController {
@@ -19,12 +16,10 @@ public class WelcomeController {
 		model.put("message", this.message);
 		return "login";
 	}
-
-	@PostMapping("/save")
-	public String saveEmployee(Employee employee, ModelMap modelMap) {
-		modelMap.put("firstName", employee.getFirstName());
-		modelMap.put("lastName", employee.getLastName());
-		return "viewDetails";
+	
+	@GetMapping("/contact")
+	public String contact() {
+		return "contact";
 	}
 
 }
