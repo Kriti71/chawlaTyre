@@ -143,6 +143,11 @@ body {
 			</div>
 		</div>
 		<div class="dropdown">
+			<form action="/billQuery" method="get">
+				<button type="submit" class="dropbtn">Generate Bill</button>
+			</form>
+		</div>
+		<div class="dropdown">
 			<form action="/contact" method="get">
 				<button type="submit" class="dropbtn">Contact</button>
 			</form>
