@@ -4,7 +4,8 @@
     <title>spring boot form submit example</title>
 </head>
 <body>
-<h1> Details submitted successfully </h1>
-<h2> Go back to <a href="/welcome">home page</a></h2>
+<h2> Failed to save details!!! </h2>
+
+ Go back to <a href="/">home page</a>.
 </body>
 </html>

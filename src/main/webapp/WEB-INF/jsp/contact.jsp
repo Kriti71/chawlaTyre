@@ -40,10 +40,16 @@ body {
 	</div>
 
 	<div class="split right">
-			<h1>Chawla Tyres</h1>
-			<h2>Mohan Chawla</h2>
-			<h2>Ph: 9830276923</h2>
-			<h2>Address: 23, Ram Kumar Ganguly Lane, Howrah - 711103</h2>
+		<h1>Chawla Tyres</h1>
+		<h2>Mohan Chawla</h2>
+		<h2>Ph: 9830276923</h2>
+		<h2>Address: 23, Ram Kumar Ganguly Lane, Howrah - 711103</h2>
+
+		<div>
+			<form action="/welcome" method="get">
+				<input type="submit" value="Home">
+			</form>
+		</div>
 	</div>
 
 

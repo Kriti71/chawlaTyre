@@ -16,10 +16,15 @@ public class WelcomeController {
 		model.put("message", this.message);
 		return "login";
 	}
-	
+
 	@GetMapping("/contact")
 	public String contact() {
 		return "contact";
+	}
+
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "welcome";
 	}
 
 }

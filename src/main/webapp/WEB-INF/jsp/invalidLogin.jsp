@@ -6,6 +6,6 @@
 <body>
 <h2> Invalid Login!!! </h2>
 
- Go back to <a href="/">home page</a>.
+ Go back to <a href="/">login page</a>.
 </body>
 </html>
