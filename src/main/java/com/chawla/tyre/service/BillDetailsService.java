@@ -112,12 +112,14 @@ public class BillDetailsService {
 		tube.setSellingPrice(quantity * Double.valueOf(env.getProperty(Constants.TUBE_PRICE)));
 		tube.setHsn(Constants.TUBE_HSN);
 		tube.setDescription(Constants.TUBE);
+		tube.setType(Constants.TUBE);
 		setTaxDetails(tube);
 		return tube;
 	}
 
 	private Bill createFlap(int quantity, String desc) {
 		Bill flap = new Bill();
+		flap.setType(Constants.FLAP);
 		flap.setQuantity(quantity);
 		flap.setSellingPrice(quantity * Double.valueOf(env.getProperty(Constants.FLAP_PRICE)));
 		flap.setHsn(Constants.FLAP_HSN);
