@@ -31,7 +31,7 @@ public class BillDetailsController {
 		ByteArrayInputStream bis = service.generateBill(billDetails);
 
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Content-Disposition", "inline; filename=inventoryreport.pdf");
+		headers.add("Content-Disposition", "attachment; filename=inventoryreport.pdf");
 
 		return ResponseEntity.ok().headers(headers).contentType(MediaType.APPLICATION_PDF)
 				.body(new InputStreamResource(bis));

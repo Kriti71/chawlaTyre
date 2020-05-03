@@ -24,6 +24,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px;
 }
 
 input[type=submit]:hover {
@@ -60,6 +61,11 @@ input[type=submit]:hover {
     <input type="text" name="gstNumber" placeholder="Customer GST Number..">
 
     <input type="submit" value="Submit">
+    
+  </form>
+  
+  <form action="/welcome" method="get">
+		<input type="submit" value="Home">
   </form>
 </div>
 

@@ -6,18 +6,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-input[type=text] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=number] {
+input[type=text], [type=number] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -35,6 +24,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 5px;
 }
 
 input[type=submit]:hover {
@@ -61,7 +51,12 @@ input[type=submit]:hover {
     <input type="text" name="commodityType" placeholder="Commodity Type..">
 
     <input type="submit" value="Submit">
-  </form>
+	
+	</form>
+	
+	<form action="/welcome" method="get">
+		<input type="submit" value="Home">
+	</form>
 </div>
 
 </body>

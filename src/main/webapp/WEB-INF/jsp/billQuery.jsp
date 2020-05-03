@@ -34,6 +34,16 @@ input[type=text], input[type=number] {
   resize: vertical;
 }
 
+input[type=txt]{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 input[type=submit], input[type=button] {
   background-color: #4CAF50;
   color: white;
@@ -41,6 +51,7 @@ input[type=submit], input[type=button] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 5px;
 }
 
 input[type=submit]:hover {
@@ -65,24 +76,41 @@ input[type=submit]:hover {
 	 <label for="customerAddress">Customer Address</label>
 	 <input type="text" name="customerAddress" placeholder="Customer Address.." required>
 	 
+	 <label for="phoneNumber">Customer Phone Number</label>
+	 <input type="number" name="phoneNumber" placeholder="Customer Phone Number.." required>
+	 
+	 <label for="vehicleNumber">Customer Vehicle Number</label>
+	 <input type="text" name="vehicleNumber" placeholder="Customer Vehicle Number..">
+	 
+	 <label for="gstNumber">Customer GST Number</label>
+	 <input type="text" name="gstNumber" placeholder="Customer GST Number..">
+	 
 	 <div class="details">   
-	    <label for="sellingPrice">Selling Price</label>
-	    <input type="text" name="bill.sellingPrice" placeholder="Selling Price..">
-	    
-	    <label for="hsn">HSN</label>
-	    <input type="text" name="bill.hsn" placeholder="HSN..">
-	    
-	    <label for="quantity">Quantity</label>
-	    <input type="text" name="bill.quantity" placeholder="Quantity..">
-	    
-	    <label for="description">Description</label>
-	    <input type="text" name="bill.description" placeholder="Description..">
+	 	<div>
+		 	<label for="type">Type</label>
+		    <input type="txt" name="bill.type" value="Tyre">
+		    
+		    <label for="hsn">HSN</label>
+		    <input type="txt" name="bill.hsn" value="4011,4012,4013">
+		 
+		    <label for="sellingPrice">Selling Price</label>
+		    <input type="txt" name="bill.sellingPrice" placeholder="Selling Price..">
+		    
+		    <label for="quantity">Quantity</label>
+		    <input type="txt" name="bill.quantity" placeholder="Quantity..">
+		    
+		    <label for="description">Description</label>
+		    <input type="txt" name="bill.description" placeholder="Description..">
+	    </div>
 	</div>
 	<input type='button' id='but_add' value='Add new'>
 	<input type="submit" value="Submit">
-  	
-  </form>
-</div>
+			
+		</form>
+		<form action="/welcome" method="get">
+			<input type="submit" value="Home">
+		</form>
+	</div>
 
 </body>
 </html>

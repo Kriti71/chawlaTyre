@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Embeddable
 public class Bill {
+	private String type;
 	private double sellingPrice;
 	private String hsn;
 	private int quantity;

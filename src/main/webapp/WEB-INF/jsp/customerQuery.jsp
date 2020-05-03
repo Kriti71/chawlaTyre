@@ -6,7 +6,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-input[type=text], [type=number] {
+input[type=text], input[type=number] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -24,6 +24,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 5px;
 }
 
 input[type=submit]:hover {
@@ -53,8 +54,12 @@ input[type=submit]:hover {
     <input type="text" name="vehicleNumber" placeholder="Vehicle Number..">
 
     <input type="submit" value="Submit">
+    
   </form>
-</div>
+		<form action="/welcome" method="get">
+			<input type="submit" value="Home">
+		</form>
+	</div>
 
 </body>
 </html>

@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class BillModel {
+	private String type;
 	private String sellingPrice;
 	private String hsn;
 	private String quantity;

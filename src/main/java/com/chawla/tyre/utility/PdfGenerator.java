@@ -72,7 +72,7 @@ public class PdfGenerator {
 			cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
 			table2.addCell(cell1);
 
-			PdfPCell cell2 = new PdfPCell(new Phrase(billDetailsModel.getCustomerName()));
+			PdfPCell cell2 = new PdfPCell(new Phrase(billDetailsModel.getCustomer().getName()));
 			cell2.setPaddingLeft(4);
 			cell2.setVerticalAlignment(Element.ALIGN_MIDDLE);
 			cell2.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -85,7 +85,7 @@ public class PdfGenerator {
 			cell3.setHorizontalAlignment(Element.ALIGN_CENTER);
 			table2.addCell(cell3);
 
-			PdfPCell cell4 = new PdfPCell(new Phrase(billDetailsModel.getCustomerAddress()));
+			PdfPCell cell4 = new PdfPCell(new Phrase(billDetailsModel.getCustomer().getAddress()));
 			cell4.setPaddingLeft(4);
 			cell4.setVerticalAlignment(Element.ALIGN_MIDDLE);
 			cell4.setHorizontalAlignment(Element.ALIGN_CENTER);
